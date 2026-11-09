@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="رزرو آنلاین خدمات دیتیلینگ خودرو">
+  <title>رزرو خدمات دیتیلینگ | GHS Detailing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">G</span><span>GHS <b>DETAILING</b></span></a>
+    <a class="call-link" href="tel:09120000000">مشاوره و تماس <span>۰۹۱۲ ۰۰۰ ۰۰۰۰</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">CARE FOR YOUR CAR</span>
+        <h1>درخشش خودروی شما،<br><em>فقط چند قدم</em> فاصله دارد.</h1>
+        <p>خدمات موردنظرت رو انتخاب کن، زمان مناسب رو رزرو کن و با پرداخت بیعانه، نوبتت رو قطعی کن.</p>
+        <div class="hero-points"><span>✓ رزرو آنلاین</span><span>✓ خدمات در محل</span><span>✓ پرداخت بیعانه</span></div>
+      </div>
+      <div class="hero-art"><div class="glow"></div><div class="car-line">GHS</div><div class="art-caption">PREMIUM AUTO CARE</div></div>
+    </section>
+
+    <section class="booking-wrap">
+      <div class="section-heading"><div><span class="eyebrow">BOOK AN APPOINTMENT</span><h2>رزرو نوبت آنلاین</h2></div><span class="secure">● رزرو امن و سریع</span></div>
+      <div class="steps" id="steps">
+        <div class="step active"><span>۱</span><small>انتخاب خدمات</small></div><i></i>
+        <div class="step"><span>۲</span><small>مشخصات خودرو</small></div><i></i>
+        <div class="step"><span>۳</span><small>انتخاب زمان</small></div><i></i>
+        <div class="step"><span>۴</span><small>تأیید و پرداخت</small></div>
+      </div>
+
+      <form id="bookingForm">
+        <section class="panel current" data-panel="0">
+          <div class="panel-title"><div><span class="step-kicker">مرحله اول</span><h3>چه خدماتی برای خودروت نیاز داری؟</h3><p>می‌تونی یک یا چند خدمت رو انتخاب کنی.</p></div></div>
+          <div class="service-grid">
+            <label class="service-card"><input type="checkbox" name="service" value="کارواش تخصصی" data-price="850000"><span class="service-icon">✦</span><b>کارواش تخصصی</b><small>شست‌وشوی دقیق داخل و بیرون</small><strong>از ۸۵۰,۰۰۰ تومان</strong></label>
+            <label class="service-card"><input type="checkbox" name="service" value="پولیش و احیای رنگ" data-price="3500000"><span class="service-icon">◈</span><b>پولیش و احیای رنگ</b><small>رفع خط‌وخش‌های سطحی و براقیت</small><strong>از ۳,۵۰۰,۰۰۰ تومان</strong></label>
+            <label class="service-card"><input type="checkbox" name="service" value="سرامیک بدنه" data-price="8500000"><span class="service-icon">◇</span><b>سرامیک بدنه</b><small>محافظت و درخشش ماندگار</small><strong>از ۸,۵۰۰,۰۰۰ تومان</strong></label>
+            <label class="service-card"><input type="checkbox" name="service" value="صفرشویی کابین" data-price="2800000"><span class="service-icon">▧</span><b>صفرشویی کابین</b><small>پاک‌سازی عمیق فضای داخلی</small><strong>از ۲,۸۰۰,۰۰۰ تومان</strong></label>
+            <label class="service-card"><input type="checkbox" name="service" value="کاور بدنه" data-price="12000000"><span class="service-icon">⬡</span><b>کاور بدنه</b><small>محافظت از رنگ در برابر آسیب‌ها</small><strong>از ۱۲,۰۰۰,۰۰۰ تومان</strong></label>
+            <label class="service-card"><input type="checkbox" name="service" value="نانو شیشه" data-price="1200000"><span class="service-icon">◎</span><b>نانو شیشه</b><small>آب‌گریزی و دید بهتر</small><strong>از ۱,۲۰۰,۰۰۰ تومان</strong></label>
+          </div>
+          <div class="panel-actions"><span class="hint">برای ادامه حداقل یک خدمت انتخاب کن.</span><button type="button" class="btn primary" data-next>مرحله بعد <b>←</b></button></div>
+        </section>
+
+        <section class="panel" data-panel="1">
+          <div class="panel-title"><div><span class="step-kicker">مرحله دوم</span><h3>مشخصات خودروی شما</h3><p>برای برآورد دقیق‌تر هزینه، اطلاعات خودرو رو وارد کن.</p></div></div>
+          <div class="form-grid">
+            <label>برند خودرو<select id="brand" required><option value="">انتخاب برند</option><option>ایران‌خودرو</option><option>سایپا</option><option>تویوتا</option><option>هیوندای</option><option>کیا</option><option>بنز</option><option>BMW</option><option>پورشه</option><option>رنو</option><option>میتسوبیشی</option><option>سایر</option></select></label>
+            <label>مدل خودرو<input id="model" required placeholder="مثلاً: ۲۰۷، کمری، سانتافه"></label>
+            <label>رنگ خودرو<select id="color" required><option value="">انتخاب رنگ</option><option>سفید</option><option>مشکی</option><option>نقره‌ای</option><option>خاکستری</option><option>قرمز</option><option>آبی</option><option>سفید صدفی</option><option>سایر</option></select></label>
+            <label>نام و نام خانوادگی<input id="customer" required placeholder="نام شما"></label>
+            <label class="full">شماره موبایل<input id="phone" type="tel" inputmode="tel" pattern="09[0-9]{9}" required placeholder="مثلاً 09123456789"></label>
+          </div>
+          <div class="panel-actions"><button type="button" class="btn ghost" data-prev>مرحله قبل</button><button type="button" class="btn primary" data-next>انتخاب زمان ←</button></div>
+        </section>
+
+        <section class="panel" data-panel="2">
+          <div class="panel-title"><div><span class="step-kicker">مرحله سوم</span><h3>روز مناسب رو انتخاب کن</h3><p>روزهای تکمیل ظرفیت با رنگ تیره مشخص شدن و قابل انتخاب نیستن.</p></div></div>
+          <div class="calendar-layout">
+            <div class="calendar">
+              <div class="calendar-head"><button type="button" id="prevMonth" aria-label="ماه قبل">›</button><strong id="monthTitle"></strong><button type="button" id="nextMonth" aria-label="ماه بعد">‹</button></div>
+              <div class="weekdays"><span>ش</span><span>ی</span><span>د</span><span>س</span><span>چ</span><span>پ</span><span>ج</span></div>
+              <div class="days" id="calendarDays"></div>
+              <div class="legend"><span><i class="available"></i> قابل رزرو</span><span><i class="full"></i> تکمیل ظرفیت</span><span><i class="chosen"></i> انتخاب شما</span></div>
+            </div>
+            <aside class="date-note"><span class="note-icon">▦</span><h4>ظرفیت محدود روزانه</h4><p>برای حفظ کیفیت خدمات، تعداد نوبت‌های هر روز محدوده. تاریخ‌هایی که ظرفیتشون تکمیل شده قابل انتخاب نیستن.</p><div class="selected-date" id="selectedDate">هنوز تاریخی انتخاب نشده</div></aside>
+          </div>
+          <div class="panel-actions"><button type="button" class="btn ghost" data-prev>مرحله قبل</button><button type="button" class="btn primary" data-next>مشاهده خلاصه ←</button></div>
+        </section>
+
+        <section class="panel" data-panel="3">
+          <div class="panel-title"><div><span class="step-kicker">مرحله چهارم</span><h3>بررسی و پرداخت بیعانه</h3><p>اطلاعات رزرو رو بررسی کن و برای ثبت درخواست ادامه بده.</p></div></div>
+          <div class="summary-layout">
+            <div class="summary-card"><h4>خلاصه سفارش</h4><div class="summary-row"><span>خدمات</span><b id="sumServices">—</b></div><div class="summary-row"><span>خودرو</span><b id="sumCar">—</b></div><div class="summary-row"><span>رنگ</span><b id="sumColor">—</b></div><div class="summary-row"><span>تاریخ رزرو</span><b id="sumDate">—</b></div><div class="summary-row"><span>نام مشتری</span><b id="sumCustomer">—</b></div><div class="summary-row"><span>موبایل</span><b id="sumPhone">—</b></div></div>
+            <div class="payment-card"><span class="step-kicker">جزئیات پرداخت</span><h4>بیعانه جهت قطعی شدن نوبت</h4><div class="price-line"><span>مبلغ تخمینی خدمات</span><b id="totalPrice">۰ تومان</b></div><div class="price-line deposit"><span>بیعانه (۲۰٪)</span><b id="depositPrice">۰ تومان</b></div><p>مبلغ نهایی خدمات پس از بررسی خودرو توسط کارشناس تأیید می‌شه. بیعانه نمونه در این دمو محاسبه شده.</p><button type="submit" class="btn primary pay-btn">پرداخت بیعانه و ثبت رزرو <b>←</b></button><small class="demo-note">نسخه نمایشی؛ درگاه پرداخت واقعی هنوز متصل نیست.</small></div>
+          </div>
+          <div class="panel-actions"><button type="button" class="btn ghost" data-prev>ویرایش اطلاعات</button></div>
+        </section>
+      </form>
+      <div class="success" id="successBox" hidden><div class="success-icon">✓</div><h3>درخواست رزرو ثبت شد!</h3><p>این فقط یک شبیه‌سازی نمایشی است؛ هیچ پرداخت واقعی انجام نشده است.</p><button class="btn primary" onclick="location.reload()">رزرو جدید</button></div>
+    </section>
+  </main>
+  <footer><span>GHS DETAILING</span><span>مراقبت حرفه‌ای از خودروی شما</span><span>© 2026</span></footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
